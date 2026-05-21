@@ -1,22 +1,25 @@
 ﻿# Roadmap
 
-## Now
+## Foundation
 - Stable TypeScript monorepo.
-- Working CLI.
+- CLI entrypoint.
 - Runtime and safety layer.
+- CI and release discipline.
 
-## Next
+## Product
 - `nilegazer run` command.
-- Sample workflow execution.
-- Better logs and audit output.
+- Sample workflows.
+- Audit-friendly output.
+- Policy simulation mode.
 
-## Later
+## Platform
 - Wallet adapters.
-- Chain integrations.
-- Policy engine expansion.
-- Example recipes and docs.
+- Multi-chain integrations.
+- Signals and market data.
+- Better observability.
 
 ## Community
 - Good first issues.
 - Help wanted labels.
-- Contributor onboarding improvements.
+- Contributor onboarding docs.
+- Release notes and changelog.

@@ -1,11 +1,18 @@
 ﻿# Security Policy
 
-If you discover a security issue, do not open a public issue.
+NileGazer treats security as a first-class requirement.
 
-Please report security concerns privately by creating a security advisory or contacting the maintainers through the repository's security channels.
+## Reporting a vulnerability
+
+Do not open a public issue for security problems.
+
+Please report vulnerabilities privately through GitHub Security Advisories or the repository security contact path.
 
 Include:
-- A clear description of the issue.
+- A clear summary of the issue.
 - Steps to reproduce.
-- Any impact you observed.
-- Suggested remediation if you have one.
+- Expected vs actual behavior.
+- Impact and severity.
+- Any suggested mitigation.
+
+We aim to acknowledge valid reports quickly and coordinate disclosure responsibly.

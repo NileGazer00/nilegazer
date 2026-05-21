@@ -9,6 +9,6 @@ labels: enhancement
 
 ## Proposed solution
 
-## Alternatives
+## Alternatives considered
 
 ## Additional context

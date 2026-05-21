@@ -1,12 +1,12 @@
 ﻿# Pull Request
 
-## What changed?
+## Summary
 
-Describe the change and why it matters.
+Describe what changed and why.
 
 ## Checklist
 
-- [ ] Code builds locally.
-- [ ] Tests pass.
-- [ ] Documentation updated if needed.
-- [ ] Change is scoped and understandable.
+- [ ] The build passes locally.
+- [ ] The change is scoped and reviewable.
+- [ ] Documentation was updated if needed.
+- [ ] Tests were added or updated if needed.

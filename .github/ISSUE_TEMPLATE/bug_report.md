@@ -5,11 +5,13 @@ title: "[bug]"
 labels: bug
 ---
 
-## What happened
+## Summary
+
+## Steps to reproduce
 
 ## Expected behavior
 
-## Steps to reproduce
+## Actual behavior
 
 ## Environment
 - OS:
