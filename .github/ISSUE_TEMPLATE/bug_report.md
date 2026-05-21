@@ -1,0 +1,17 @@
+﻿---
+name: Bug report
+about: Report a bug or unexpected behavior
+title: "[bug]"
+labels: bug
+---
+
+## What happened
+
+## Expected behavior
+
+## Steps to reproduce
+
+## Environment
+- OS:
+- Node:
+- pnpm:
