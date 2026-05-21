@@ -12,6 +12,7 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "baseUrl": ".",
+    "types": ["node"],
     "paths": {
       "@nilegazer/core": ["packages/core/src/index.ts"],
       "@nilegazer/safety": ["packages/safety/src/index.ts"],
