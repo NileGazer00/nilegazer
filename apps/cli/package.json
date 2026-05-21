@@ -1,0 +1,15 @@
+{
+  "name": "@nilegazer/cli",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@nilegazer/core": "workspace:*",
+    "@nilegazer/runtime": "workspace:*",
+    "@nilegazer/safety": "workspace:*"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "node src/index.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  }
+}

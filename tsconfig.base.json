@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nilegazer/core": ["packages/core/src/index.ts"],
+      "@nilegazer/safety": ["packages/safety/src/index.ts"],
+      "@nilegazer/runtime": ["packages/runtime/src/index.ts"]
+    }
+  }
+}
