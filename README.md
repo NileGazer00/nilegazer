@@ -54,12 +54,20 @@ flowchart LR
 
 ## Architecture
 
+### Core
+
 - `packages/core` — shared types and execution interfaces.
 - `packages/runtime` — workflow orchestration and policy-aware execution.
 - `packages/safety` — allowlists, validation, and policy checks.
+
+### Integrations
+
 - `packages/signals` — market data and external signals.
 - `packages/wallets` — wallet integrations.
 - `packages/observability` — logs, traces, and audits.
+
+### Applications
+
 - `apps/cli` — command-line interface.
 - `apps/examples` — sample workflows.
 
