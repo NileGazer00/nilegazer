@@ -1,4 +1,4 @@
-﻿# NileGazer
+# NileGazer
 
 [![Build Status](https://github.com/NileGazer00/nilegazer/actions/workflows/ci.yml/badge.svg)](https://github.com/NileGazer00/nilegazer/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -6,13 +6,13 @@
 [![Releases](https://img.shields.io/github/v/release/NileGazer00/nilegazer)](https://github.com/NileGazer00/nilegazer/releases)
 [![Security](https://img.shields.io/badge/security-policy--first-red.svg)](SECURITY.md)
 
-NileGazer is a policy-first autonomous finance and onchain execution platform for AI agents.
+> Policy-first autonomous finance and onchain execution for AI agents.
 
-Build agents that can plan, verify, and execute real financial actions with safety, observability, and modular multi-chain support.
+NileGazer is a premium open-source platform for building agents that can plan, verify, and execute real financial actions with safety, observability, and modular multi-chain support.
 
 ## Why NileGazer
 
-Agents need more than tools. They need a runtime that can safely move value, enforce policy, and leave an audit trail.
+Agents need more than tools. They need a runtime that can safely move value, enforce policy, and leave a full audit trail.
 
 ## What it does
 
@@ -36,6 +36,22 @@ pnpm --filter @nilegazer/cli dev
 nilegazer run
 ```
 
+## How it works
+
+```mermaid
+flowchart LR
+  User[Agent / Developer] --> CLI[CLI: nilegazer run]
+  CLI --> Runtime[Runtime]
+  Runtime --> Safety[Safety Engine]
+  Safety -->|Allowed| Executor[Execution Layer]
+  Safety -->|Blocked| Audit[Audit Log]
+  Executor --> Wallet[Wallet Adapters]
+  Executor --> Chains[Chains / Protocols]
+  Executor --> Observability[Logs / Traces]
+  Runtime --> Signals[Market & Onchain Signals]
+  Signals --> Runtime
+```
+
 ## Architecture
 
 - `packages/core` — shared types and execution interfaces.
@@ -47,17 +63,42 @@ nilegazer run
 - `apps/cli` — command-line interface.
 - `apps/examples` — sample workflows.
 
-## Security
+## Security model
 
-See `SECURITY.md` for reporting instructions.
+NileGazer is designed with safety-first execution in mind.
+
+- Policy checks run before execution.
+- Actions can be blocked before value moves.
+- Sensitive issues should be reported privately.
+- The repo is intended to support audit-friendly output and traceable workflows.
+
+See `SECURITY.md` for reporting guidance.
 
 ## Contributing
 
-See `CONTRIBUTING.md` and the issue templates in `.github/ISSUE_TEMPLATE/`.
+We welcome contributions that improve safety, reliability, docs, examples, and integrations.
+
+Start with:
+- `CONTRIBUTING.md`
+- `.github/ISSUE_TEMPLATE/`
+- `roadmap.md`
+
+Look for `good first issue` and `help wanted` labels when available.
 
 ## Roadmap
 
-See `roadmap.md`.
+- `nilegazer run` command.
+- Sample workflow execution.
+- Policy simulation mode.
+- Better logs and audit output.
+- Wallet adapters.
+- Multi-chain integrations.
+- Signals and market data.
+- Contributor-friendly examples.
+
+## Release notes
+
+See `CHANGELOG.md`.
 
 ## License
 
