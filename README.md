@@ -2,45 +2,28 @@
 
 Policy-first autonomous finance and onchain execution for AI agents.
 
-NileGazer is a modular platform for building agents that can plan, verify, and execute financial actions with safety, observability, and multi-chain support.
+## What it is
 
-## What it does
+NileGazer is a modular TypeScript platform for building agents that can plan, verify, and execute financial actions with safety and observability.
 
-- Plans agent workflows.
-- Executes swaps, transfers, and approvals.
-- Applies policy checks before action.
-- Tracks every step with logs and audit trails.
-- Supports a modular plugin-style architecture.
+## Modules
 
-## Why it exists
+- `packages/core`
+- `packages/runtime`
+- `packages/safety`
+- `apps/cli`
 
-Agents need more than tools. They need a runtime that can safely move value in the real world.
-
-## Core modules
-
-- `packages/core` — shared types and interfaces.
-- `packages/runtime` — workflow planning and orchestration.
-- `packages/safety` — policy checks and allowlists.
-- `packages/signals` — market and event inputs.
-- `packages/wallets` — wallet adapters.
-- `packages/observability` — logs, traces, and audit support.
-- `apps/cli` — command-line entrypoint.
-- `apps/examples` — sample workflows.
-
-## Quick start
+## Getting started
 
 ```bash
-git clone https://github.com/NileGazer00/nilegazer.git
-cd nilegazer
+pnpm install
+pnpm build
+pnpm --filter @nilegazer/cli dev
 ```
 
-## Roadmap
+## Why it matters
 
-- TypeScript core runtime
-- policy engine
-- workflow CLI
-- wallet adapters
-- first end-to-end example
+Agents need execution systems, not just tools.
 
 ## Contributing
 
